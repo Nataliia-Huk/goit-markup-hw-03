@@ -25,6 +25,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 p {
   margin: 0;
 }
@@ -79,7 +80,9 @@ img {
 }
 
 /* --------------HEADER ----------------*/
-
+.header {
+  border-bottom: 1px solid #eee;
+}
 .header__inner {
   display: flex;
   align-items: center;
@@ -121,12 +124,19 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+/*.header__menu-link:visited {
+  color: #000000;
+}
+*/
 
 .header__menu-link:hover,
 .header__menu-link:focus {
   color: var(--logo-main-color);
 }
 
+.current-link {
+  color: var(--logo-main-color);
+}
 .header__contact {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -252,7 +262,11 @@ img {
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: #fff;
+  text-align: center;
 }
 
 .team__title {
@@ -352,23 +366,19 @@ img {
 }
 
 .footer__address {
-  display: inline-block;
-  margin-bottom: 9px;
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-footer-address);
 }
-
+.footer__li {
+  margin-bottom: 9px;
+}
 .footer__email-tel {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.footer__email {
-  display: inline-block;
-  margin-bottom: 9px;
 }
