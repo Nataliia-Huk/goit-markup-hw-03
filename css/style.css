@@ -352,14 +352,15 @@ svg {
   border: 1px solid var(--icon-main-color);
   border-radius: 4px;
 }
-.clients__list-item:hover {
+.clients__list-item:hover,
+.clients__list-item:focus {
   border: 1px solid var(--logo-main-color);
 }
 .clients__list-item:hover .client__icon,
 .clients__list-item:focus .client__icon {
   fill: var(--logo-main-color);
-  gap: 30px;
 }
+
 .clients__list-item {
   padding: 16px 31px;
   border: 1px solid;
